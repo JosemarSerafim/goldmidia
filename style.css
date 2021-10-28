@@ -13,6 +13,69 @@ header {
     position:relative;
 }
 
+.navbar {
+    position: absolute;
+    left:10%;
+    top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity:1;
+}
+
+.navbar h1{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.navbar p {
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+    font-size: 0.6rem;
+    line-height: .4rem;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: .3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 200;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.navbar ul li::after {
+    content: "";
+    height: .8rem;
+    width: .1rem;
+    background-color: #fff;
+    margin-left: .4rem;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid rgba(219,171,45, 1);
+}
+
+.navbar ul a {
+    text-decoration: none;
+}
+
+
+
 .img-wrapper {
     width: 100%;
     height: 100%;
@@ -30,7 +93,7 @@ header {
 
 .banner {
     position: absolute;
-    top:40%;
+    top:50%;
     left:10%;
     line-height: .3rem;
 }
@@ -46,7 +109,7 @@ header {
     opacity:0
 }
 
-.banner span {
+span {
     color: rgba(219,171,45, 1);
 }
 
@@ -76,12 +139,12 @@ header {
     animation: moverBanner 1s 0.9s forwards;
     opacity: 0;
     
-    
 }
-
 .banner button:hover {
     opacity: 0.8;
 }
+
+
 
 @keyframes dar-zoom{
     0%{
@@ -101,3 +164,4 @@ header {
         opacity: 1;
     }
 }
+
