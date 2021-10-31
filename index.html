@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -13,11 +14,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container2">
 
-        <header>
+        <header id = "home">
             <div class="img-wrapper">
-                <img src="./img/bg2.jpg" alt="">
+                <img src="./img/fundo.jpg" alt="">
             </div>
             <nav class="navbar">
                 <div class="logo">
@@ -29,10 +30,10 @@
                     <a href="#">
                         <li class="item">home</li>
                     </a>
-                    <a href="#">
-                        <li class="item">parceiros</li>
+                    <a href="#quem-somos">
+                        <li class="item">Quem somos</li>
                     </a>
-                    <a href="#">
+                    <a href="#servicos">
                         <li class="item">serviços</li>
                     </a>
                     <a href="#">
@@ -43,21 +44,21 @@
             <div class="banner">
                 <h1>Gold<span>Midia</span></h1>
 
-                <h2></h2>
-                <p>A melhor escolha para a sua empresa</p>
-                <button>Saiba mais</button>
+                <h2 id="anime">A melhor escolha para a sua empresa</h2>
+                <p></p>
+               <!--  <button>Saiba mais</button> -->
             </div>
         </header>
 
         <section id="quem-somos" class="sessao-quem-somos">
-            
+
             <div class="sessao-header">
                 <h1>Quem somos</h1>
                 <p>O Que Oferecemos É Serviço De </p>
                 <p>Alta Qualidade</p>
             </div>
             <div class="context">
-                <div class="image"> 
+                <div class="image">
                 </div>
                 <div class="text">
                     <p>
@@ -85,7 +86,99 @@
                 </div>
             </div>
         </section>
+
+        <section id="servicos">
+            <div class="container">
+
+            </div>
+            <div class="cards">
+                <div class="header">
+                   
+                </div>
+                <div class="card">
+
+                    <div class="design-card" id="design">
+                        <div class="card-icon">
+                            <img src="./img/curve.png" alt="Design gráfico">
+                        </div>
+                        <div class="card-text" >
+                            <h2>Design Gráfico</h2>
+                            <p>
+                                Identidade Visual <br />
+                                Banners<br />
+                                Folders<br />
+                                Ilustrações<br />
+                                Cartões de Visita<br />
+                                Layout de Eventos<br />
+                                Animação 2D & 3D
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="design-card" id="branding">
+                        <div class="card-icon">
+                            <img src="./img/brand.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2>Brandig</h2>
+                            <p>
+                                Branding Road Map <br/>
+                                Transição de Marca <br/>
+                                Cultura de Marca<br/>
+                                Narrativa de Marca<br/>
+                                Linguagem da Marca<br/>
+                                Storytelling<br/>
+                                Endobranding<br/>
+                                Employer Branding
+                            </p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="design-card" id="multimidia">
+                        <div class="card-icon">
+                            <img src="./img/multimidia.png" alt="multimídia">
+                        </div>
+                        <div class="card-text">
+                            <h2>multimídia</h2>
+                            <p>
+                                Fotografias comerciais<br/>
+                                Publicidades de rádio<br/>
+                                Filmes comerciais<br/>
+                                Filmes institucionais<br/>
+                                Apoio à Produção<br/>
+                                Documentários<br/>
+                                Vinhetas
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="design-card" id="outros">
+                        <div class="card-icon">
+                            <img src="./img/setting.png" alt="outros">
+                        </div>
+                        <div class="card-text">
+                            <h2>Outros</h2>
+                            <p>
+                                Expositores <br/>
+                                Acrílicos<br/>
+                                Offsets<br/>
+                                Merchandising<br/>
+                                Packaging<br/>
+                                Tecido
+                            </p>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
     </div>
+    <script src="./javascript.js"></script>
 </body>
 
 </html>
