@@ -7,6 +7,8 @@ function Write(element) {
     });
 
     
+
+    
 }
 
 const titulo = document.querySelector('h2');

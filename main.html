@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>GolMidia</title>
+    <link rel="stylesheet" href="./main.css">
+    <title>GoldMídia</title>
 </head>
-
 <body>
-    <div class="container2">
-
-        <header id = "home">
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home"></a>
+                <h1>Gold<span>Midia</span></h1></a>
+                <p>Marketing & publicidade</p>
+            </div>
+            <ul class="menu">
+                <a href="#">
+                    <li class="item">home</li>
+                </a>
+                <a href="#quem-somos">
+                    <li class="item">Quem somos</li>
+                </a>
+                <a href="#servicos">
+                    <li class="item">serviços</li>
+                </a>
+                <a href="#">
+                    <li class="item">portfólio</li>
+                </a>
+            </ul>
+        </nav>
+        <section>
+           
             <div class="img-wrapper">
+                <div class="banner">
+                    <h1>Gold<span>Midia</span></h1>
+    
+                    <h2 id="anime">A melhor escolha para a sua empresa</h2>
+                   <!--  <button>Saiba mais</button> -->
+                </div>
                 <img src="./img/fundo.jpg" alt="">
             </div>
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="#home"></a>
-                    <h1>Gold<span>Midia</span></h1></a>
-                    <p>Marketing & publicidade</p>
-                </div>
-                <ul class="menu">
-                    <a href="#">
-                        <li class="item">home</li>
-                    </a>
-                    <a href="#quem-somos">
-                        <li class="item">Quem somos</li>
-                    </a>
-                    <a href="#servicos">
-                        <li class="item">serviços</li>
-                    </a>
-                    <a href="#">
-                        <li class="item">portfólio</li>
-                    </a>
-                </ul>
-            </nav>
-            <div class="banner">
-                <h1>Gold<span>Midia</span></h1>
 
-                <h2 id="anime">A melhor escolha para a sua empresa</h2>
-                <p></p>
-               <!--  <button>Saiba mais</button> -->
-            </div>
-        </header>
+            
+        </section>
 
-        <section id="quem-somos" class="sessao-quem-somos">
-
+        <section>
             <div class="sessao-header">
                 <h1>Quem somos</h1>
                 <p>O Que Oferecemos É Serviço De </p>
                 <p>Alta Qualidade</p>
             </div>
+
             <div class="context">
                 <div class="image">
                 </div>
@@ -87,20 +82,15 @@
             </div>
         </section>
 
-        <section id="servicos">
-            <div class="container">
+        <section>
+            <div class="card-container">
+                <div class="cards" id="design">
 
-            </div>
-            <div class="cards">
-                <div class="header">
-                   
-                </div>
-                <div class="card">
-
-                    <div class="design-card" id="design">
+                    <div class="card">
                         <div class="card-icon">
                             <img src="./img/curve.png" alt="Design gráfico">
                         </div>
+
                         <div class="card-text" >
                             <h2>Design Gráfico</h2>
                             <p>
@@ -116,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="design-card" id="branding">
+                    <div class="card" id="branding">
                         <div class="card-icon">
                             <img src="./img/brand.png" alt="">
                         </div>
@@ -135,8 +125,8 @@
 
                         </div>
                     </div>
-                    
-                    <div class="design-card" id="multimidia">
+
+                    <div class="card" id="multimidia">
                         <div class="card-icon">
                             <img src="./img/multimidia.png" alt="multimídia">
                         </div>
@@ -155,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="design-card" id="outros">
+                    <div class="card" id="outros">
                         <div class="card-icon">
                             <img src="./img/setting.png" alt="outros">
                         </div>
@@ -172,13 +162,9 @@
 
                         </div>
                     </div>
-                    
-
                 </div>
             </div>
         </section>
     </div>
-    <script src="./javascript.js"></script>
 </body>
-
 </html>
