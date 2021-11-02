@@ -21,7 +21,7 @@ body{
 }
 
 nav {
-    position:absolute;
+    position:fixed;
     width:100%;
     height:10%;
     display: flex;
@@ -251,38 +251,72 @@ section:nth-of-type(3){
     position:relative;
 }
 
-.card-container {
+.quem-somos-container {
 
     width: 100%;
     height: 100%;
     background-color: rgb(217,115,29);
     opacity: .8;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.card-container .cards {
-    width: 100%;
-    height: 100%;
+.quem-somos-container .header {
+    font-family: 'Baloo Da 2', serif;
+    font-weight:200;
+    line-height:1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
+    width: 100%;
+    height: 20%;
+
+}
+
+.quem-somos-container .header h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    line-height:2.4rem;
+}
+
+.quem-somos-container .header h2::after {
+    content:"";
+    height: .2rem;
+    width: 4rem;
+    background-color:rgb(51,51,51);
+}
+
+.quem-somos-container .cards {
+    width: 100%;
+    height: 80%;
     display: flex;
     justify-content:space-around;
     align-items:center;
+
 
 }
 
 .cards .card {
     width: 30%;
-    height: 65%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top:2rem;
 
+    
+
 }
 
 .card .card-icon {
-    height: 25%;
+    height: 20%;
     width: 30%;
     border-radius: 50%;
     justify-content: center;
@@ -299,6 +333,7 @@ section:nth-of-type(3){
     height: 70%;
     text-align: center;
     font-family: 'Baloo Da 2', serif;
+    color: #fff;
     font-weight:200;
     line-height:1.4rem;
     letter-spacing:.1rem;
@@ -338,13 +373,13 @@ section:nth-of-type(3){
 
 @keyframes icones {
     0%{
-        height: 35%;
+        height: 30%;
         width: 40%;
     }
 
     100%{
 
-        height: 25%;
+        height: 20%;
         width: 30%;
     }
 }
@@ -357,4 +392,37 @@ section:nth-of-type(3){
         transform: translateX(10) rotate(-6deg);
         opacity: 1;
     }
+}
+
+section:nth-of-type(4) {
+    background-color: rgb(255,255,255);
+    color: #797979;
+}
+
+.portfolio-container {
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    
+}
+
+.portfolio-container h2 {
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container span{
+    display: flex;
+}
+
+.portfolio-container h2::after {
+    content:"";
+    height: .4rem;
+    width: 4rem;
+    background-color:rgb(217,115,29);
 }
