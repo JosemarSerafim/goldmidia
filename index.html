@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,49 @@
     <link rel="stylesheet" href="./main.css">
     <title>GoldMídia</title>
 </head>
+
 <body>
     <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#home"></a>
-                <h1>Gold<span>Midia</span></h1></a>
-                <p>Marketing & publicidade</p>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#home"><img src="./img/LOGO.svg" alt="logo"></a>
+                </div>
+                <div class="menu">
+                    <ul class="menu">
+                        <a href="#">
+                            <li class="item">home</li>
+                        </a>
+                        <a href="#quem-somos">
+                            <li class="item">Quem somos</li>
+                        </a>
+                        <a href="#servicos">
+                            <li class="item">serviços</li>
+                        </a>
+                        <a href="#">
+                            <li class="item">portfólio</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <a href="#">
-                    <li class="item">home</li>
-                </a>
-                <a href="#quem-somos">
-                    <li class="item">Quem somos</li>
-                </a>
-                <a href="#servicos">
-                    <li class="item">serviços</li>
-                </a>
-                <a href="#">
-                    <li class="item">portfólio</li>
-                </a>
-            </ul>
+            
         </nav>
         <section>
-           
+
             <div class="img-wrapper">
                 <div class="banner">
                     <h1>Gold<span>Midia</span></h1>
-    
+
                     <h2 id="anime">A melhor escolha para a sua empresa</h2>
-                   <!--  <button>Saiba mais</button> -->
+                    <!--  <button>Saiba mais</button> -->
                 </div>
                 <img src="./img/fundo.jpg" alt="">
             </div>
 
-            
+
         </section>
 
-        <section>
+        <section id = "quem-somos">
             <div class="sessao-header">
                 <h1>Quem somos</h1>
                 <p>O Que Oferecemos É Serviço De </p>
@@ -96,7 +101,7 @@
                             <img src="./img/curve.png" alt="Design gráfico">
                         </div>
 
-                        <div class="card-text" >
+                        <div class="card-text">
                             <h2>Design Gráfico</h2>
                             <p>
                                 Identidade Visual <br />
@@ -118,13 +123,13 @@
                         <div class="card-text">
                             <h2>Brandig</h2>
                             <p>
-                                Branding Road Map <br/>
-                                Transição de Marca <br/>
-                                Cultura de Marca<br/>
-                                Narrativa de Marca<br/>
-                                Linguagem da Marca<br/>
-                                Storytelling<br/>
-                                Endobranding<br/>
+                                Branding Road Map <br />
+                                Transição de Marca <br />
+                                Cultura de Marca<br />
+                                Narrativa de Marca<br />
+                                Linguagem da Marca<br />
+                                Storytelling<br />
+                                Endobranding<br />
                                 Employer Branding
                             </p>
 
@@ -138,12 +143,12 @@
                         <div class="card-text">
                             <h2>multimídia</h2>
                             <p>
-                                Fotografias comerciais<br/>
-                                Publicidades de rádio<br/>
-                                Filmes comerciais<br/>
-                                Filmes institucionais<br/>
-                                Apoio à Produção<br/>
-                                Documentários<br/>
+                                Fotografias comerciais<br />
+                                Publicidades de rádio<br />
+                                Filmes comerciais<br />
+                                Filmes institucionais<br />
+                                Apoio à Produção<br />
+                                Documentários<br />
                                 Vinhetas
                             </p>
 
@@ -157,11 +162,11 @@
                         <div class="card-text">
                             <h2>Outros</h2>
                             <p>
-                                Expositores <br/>
-                                Acrílicos<br/>
-                                Offsets<br/>
-                                Merchandising<br/>
-                                Packaging<br/>
+                                Expositores <br />
+                                Acrílicos<br />
+                                Offsets<br />
+                                Merchandising<br />
+                                Packaging<br />
                                 Tecido
                             </p>
 
@@ -174,8 +179,39 @@
         <section>
             <div class="portfolio-container">
                 <h2>Conheça nosso Portifólio</h2>
+
+            </div>
+
+
+
+
+        </section>
+
+        <section>
+            <div class="contato-container">
+                <div class="contact-header">
+                    <h2>Fale connosco</h2>
+                </div>
+                <div class="contact-container">
+                    <form action="">
+    
+                        <label for="fname">Nome</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+                        <label for="lname">Sobrenome</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Escreva sua mensagem..."
+                            style="height:200px"></textarea>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </section>
     </div>
 </body>
+
 </html>

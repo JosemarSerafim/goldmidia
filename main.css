@@ -6,7 +6,6 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: red;
 
     
 }
@@ -14,25 +13,33 @@ body{
 .container {
     width: 100%;
     height: 100%;
-    background-color:green;
     scroll-snap-type: y mandatory ;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 
-nav {
+.navbar{
     position:fixed;
-    width:100%;
+    width:100vw;
     height:10%;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     background-color:#fff;
-    z-index: 1;
+    z-index:9;
+    margin-right: 10%;
 
 }
 
-nav h1{
+.navbar .logo img {
+    width:40%;
+    height:40%;
+
+    margin-left:50%;
+}
+
+.navbar h1{
     line-height: .1rem;
     font-family: 'Baloo Da 2', serif;
     color:#797979;
@@ -40,18 +47,26 @@ nav h1{
     cursor: pointer;
 }
 
-nav p {
+.navbar p {
     font-family: 'Josefin Slab', serif;
     
     font-size: 0.6rem;
     line-height: .4rem;
 }
 
-nav ul {
+.navbar .menu {
+    width: 50%;
+    height: 80%;
+    margin-left: 30%;
+}
+.navbar ul {
+    width:40%;
+    height:30%;
     list-style: none;
     display: flex;
+
 }
-nav ul a {
+.navbar ul a {
     text-decoration: none;
 }
 ul li {
@@ -109,6 +124,7 @@ section:nth-of-type(1) {
     opacity: 0.5;
     animation: dar-zoom 25s ;
     background-attachment: fixed;
+    z-index: 8;
 }
 
 .banner {
@@ -116,7 +132,7 @@ section:nth-of-type(1) {
     top:50%;
     left:10%;
     line-height: .3rem;
-    z-index: 3;
+    z-index: 10;
 
 }
 
@@ -310,6 +326,7 @@ section:nth-of-type(3){
     justify-content: center;
     align-items: center;
     padding-top:2rem;
+    line-height:.4rem;
 
     
 
@@ -324,9 +341,9 @@ section:nth-of-type(3){
     align-items: center;
     background:rgba(255,255,255,0.2);
     border: none;
-    margin-bottom: 5%;
 
 }
+
 
 .card .card-text {
     width: 100%;
@@ -337,6 +354,24 @@ section:nth-of-type(3){
     font-weight:200;
     line-height:1.4rem;
     letter-spacing:.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-text h2{
+    height:10%;
+    width: 100%;
+    line-height:.1rem;
+
+
+}
+
+.card .card-text p {
+    margin-top: -10%;
+    height:80%;
+
+
 }
 
 .card-icon img {
@@ -402,7 +437,9 @@ section:nth-of-type(4) {
 .portfolio-container {
     height: 100%;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -426,3 +463,77 @@ section:nth-of-type(4) {
     width: 4rem;
     background-color:rgb(217,115,29);
 }
+
+section:nth-of-type(4) {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #fff;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* cards */
+
+
+
+/* formulário contactos */
+
+.contato-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.contato-container .contact-header{
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', serif;
+    color: #797979;
+
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  
