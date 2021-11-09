@@ -10,7 +10,7 @@ body{
     
 }
 
-.container {
+.container-app {
     width: 100%;
     height: 100%;
     scroll-snap-type: y mandatory ;
@@ -19,7 +19,7 @@ body{
 
 }
 
-.navbar{
+.navbar-app{
     position:fixed;
     width:100vw;
     height:10%;
@@ -32,14 +32,14 @@ body{
 
 }
 
-.navbar .logo img {
+.navbar-app .logo img {
     width:40%;
     height:40%;
 
     margin-left:50%;
 }
 
-.navbar h1{
+.navbar-app h1{
     line-height: .1rem;
     font-family: 'Baloo Da 2', serif;
     color:#797979;
@@ -47,26 +47,26 @@ body{
     cursor: pointer;
 }
 
-.navbar p {
+.navbar-app p {
     font-family: 'Josefin Slab', serif;
     
     font-size: 0.6rem;
     line-height: .4rem;
 }
 
-.navbar .menu {
+.navbar-app .menu-app {
     width: 50%;
     height: 80%;
     margin-left: 30%;
 }
-.navbar ul {
+.navbar-app ul {
     width:40%;
     height:30%;
     list-style: none;
     display: flex;
 
 }
-.navbar ul a {
+.navbar-app ul a {
     text-decoration: none;
 }
 ul li {
@@ -125,6 +125,7 @@ section:nth-of-type(1) {
     animation: dar-zoom 25s ;
     background-attachment: fixed;
     z-index: 8;
+    
 }
 
 .banner {
@@ -198,6 +199,7 @@ section:nth-of-type(2) {
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: .1rem;
+    margin-top: .4rem;
     
 }
 
@@ -211,12 +213,12 @@ section:nth-of-type(2) {
 }
 
 .sessao-header p {
-    margin-left: 10%;
+    margin-left: 9.8%;
     font-family: 'Baloo Da 2', serif;
     font-weight: 700;
     color: rgb(51,51,51);
     font-size: 2.3rem;
-    line-height: .1rem;
+    line-height: .7em;
     margin-bottom: 1rem;
     
 }
@@ -260,8 +262,8 @@ section:nth-of-type(3){
     color:#000;
     opacity: .8;
     background: url('./img/serviços.jpg') no-repeat;
-    background-size: cover;
- 
+    background-size: cover; 
+
     background-attachment: fixed;
     overflow:hidden;
     position:relative;
@@ -278,7 +280,7 @@ section:nth-of-type(3){
 
 }
 
-.quem-somos-container .header {
+.quem-somos-container .header-quem-somos {
     font-family: 'Baloo Da 2', serif;
     font-weight:200;
     line-height:1.5rem;
@@ -290,25 +292,29 @@ section:nth-of-type(3){
     margin-top: 5%;
     width: 100%;
     height: 20%;
+    
 
 }
 
-.quem-somos-container .header h2 {
+.quem-somos-container .header-quem-somos h2 {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
     line-height:2.4rem;
+    font-size: 1.25rem;
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 700;
 }
 
-.quem-somos-container .header h2::after {
+.quem-somos-container .header-quem-somos h2::after {
     content:"";
     height: .2rem;
     width: 4rem;
     background-color:rgb(51,51,51);
 }
 
-.quem-somos-container .cards {
+.quem-somos-container .cards-quem-somos {
     width: 100%;
     height: 80%;
     display: flex;
@@ -318,7 +324,7 @@ section:nth-of-type(3){
 
 }
 
-.cards .card {
+.cards-quem-somos .card-quem-somos {
     width: 30%;
     height: 100%;
     display: flex;
@@ -332,7 +338,7 @@ section:nth-of-type(3){
 
 }
 
-.card .card-icon {
+.card-quem-somos .card-icon {
     height: 20%;
     width: 30%;
     border-radius: 50%;
@@ -345,7 +351,7 @@ section:nth-of-type(3){
 }
 
 
-.card .card-text {
+.card-quem-somos .card-text {
     width: 100%;
     height: 70%;
     text-align: center;
@@ -359,16 +365,19 @@ section:nth-of-type(3){
     align-items: center;
 }
 
-.card .card-text h2{
+.card-quem-somos .card-text h2{
     height:10%;
     width: 100%;
-    line-height:.1rem;
+    font-size: 2.25rem;
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 700;
+
 
 
 }
 
-.card .card-text p {
-    margin-top: -10%;
+.card-quem-somos .card-text p {
+    margin-top: 5%;
     height:80%;
 
 
@@ -483,14 +492,22 @@ section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    border:none;
+    background-color: #3e3e3e;
     padding: 20px;
 }
 
 /* cards */
 
-
+/* section:nth-of-type(5) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('./img/serviços.jpg') no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: right top;
+} */
 
 /* formulário contactos */
 
@@ -500,40 +517,161 @@ section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     align-items:center;
+    
+
+   background-color: rgb(217,115,29);
+    opacity: .5;
 }
+
+
 
 .contato-container .contact-header{
-    margin-top: 5%;
     text-transform: uppercase;
     font-family: 'Baloo Da 2', serif;
-    color: #797979;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 
 }
-input[type=text], textarea {
+
+.contato-container .form{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: right;
+
+
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    
+}
+
+.contato-container .form .contact-container{
+    width: 50%;
+    background-color: transparent;
+
+
+}
+
+.contato-container .form .contact-container form {
+    background-color:transparent;
+}
+
+input[type=text], input[type=email]{
     width: 100%;
     padding: 12px; 
-    border: 1px solid #ccc; 
+    border: 5px solid #fff;
     border-radius: 4px; 
     box-sizing: border-box;
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical ;
+    border: none;
+    background-color:transparent;
+    border-bottom: 1px solid #797979;
+    color:#fff;
 }
 
+
+
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+button {    
+    all: unset;
+    margin-top: 2.4em;
+    background: transparent;
+    border: 2px solid white;
+    padding: 1em 4em;
+    border-radius: 50px;
     cursor: pointer;
-  }
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+button span {
+    display: inline-block;
+    transition: all 300ms ease;
+    
+}
+
+button span::before, button span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+button span::before {
+    height: 7px;
+    width: 7px;
+    background: transparent;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    right: 30px; top: 21px;
+    transform: rotate(45deg);
+}
+
+button span::after {
+    background: white;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    top: 1.49em;
+
+}
+
+button span::after:hover{
+    transform: translateX(-10px);
+}
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.app-form-control::placeholder {
+    color: rgb(224, 220, 220);
+}
+
+.text-transform {
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', serif;
+    font-weight: 700;
+    color: rgb(51,51,51);
+    margin-top: -8%;;
+}
+
+.fundo {
+    background-color: red;
+}
   
 
   
