@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
 
+
     
 }
 
@@ -22,7 +23,7 @@ body{
 .navbar-app{
     position:fixed;
     width:100vw;
-    height:10%;
+    height:8%;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -55,22 +56,24 @@ body{
 }
 
 .navbar-app .menu-app {
-    width: 50%;
-    height: 80%;
+    display:flex;
+    width: 100%;
+    height: 100%;
     margin-left: 30%;
 }
 .navbar-app ul {
-    width:40%;
+    width:100%;
     height:30%;
     list-style: none;
     display: flex;
+    margin-left: -50%;
 
 }
 .navbar-app ul a {
     text-decoration: none;
 }
 ul li {
-    margin-left: .5rem;
+    margin-left: .4rem;
     color: rgb(217,115,29);
     text-transform: uppercase;
     font-family: 'Baloo Da 2', serif;
@@ -671,6 +674,27 @@ button span::after:hover{
 
 .fundo {
     background-color: red;
+}
+
+section:nth-of-type(6){
+    padding-top:5%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333333;
+
+}
+
+footer a {
+    text-decoration: none;
+    color:RGB(20,17,17);
+}
+
+footer a:hover {
+    cursor: pointer;
+    color :RGB(20,17,17);
 }
   
 
