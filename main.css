@@ -21,6 +21,7 @@ html {
     scroll-snap-type: y mandatory ;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
 
@@ -34,6 +35,7 @@ html {
     background-color:#fff;
     z-index:9;
     margin-right: 10%;
+   
 
 }
 
@@ -100,8 +102,9 @@ section {
  
     height: 100vh;
     width: 100vw;
-    scroll-behavior: smooth;
+    
     scroll-snap-align: start;
+
     
 }
 
