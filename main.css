@@ -28,7 +28,7 @@ html {
 .navbar-app{
     position:fixed;
     width:100vw;
-    height:8%;
+    height:10%;
     display: flex;
     justify-content:space-between;
     align-items: center;
