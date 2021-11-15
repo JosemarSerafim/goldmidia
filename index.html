@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./css/parceiros.css">
 
+
     <title>GoldMídia</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,11 +27,11 @@
         <nav>
             <div class="navbar-app">
                 <div class="logo">
-                    <a href="#home"><img src="./img/LOGO.svg" alt="logo"></a>
+                    <a href="#Banner"><img src="./img/LOGO.svg" alt="logo"></a>
                 </div>
                 <div class="menu-app">
                     <ul class="menu-app">
-                        <a href="#">
+                        <a href="#Banner">
                             <li class="item-app">home</li>
                         </a>
                         <a href="#quem-somos">
@@ -34,21 +40,28 @@
                         <a href="#servicos">
                             <li class="item-app">serviços</li>
                         </a>
-                        <a href="#">
+                        <a href="#portifolio">
                             <li class="item-app">portfólio</li>
+                        </a>
+                        <a href="https://www.facebook.com/goldmidia">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                        </a>
+
+                        <a href="https://www.instagram.com/goldmidia">
+                            <li><i class="fab fa-instagram"></i></li>
                         </a>
                     </ul>
                 </div>
             </div>
 
         </nav>
-        <section>
+        <section id ="Banner">
 
             <div class="img-wrapper">
                 <div class="banner">
                     <h1>Gold<span>Midia</span></h1>
 
-                    <h2 id="anime">A melhor escolha para a sua empresa</h2>
+                    <h2 data-js="typing" id="anime"></h2>
                     <!--  <button>Saiba mais</button> -->
                 </div>
                 <img src="./img/fundo.jpg" alt="">
@@ -95,7 +108,7 @@
             </div>
         </section>
 
-        <section>
+        <section id = "servicos">
             <div class="quem-somos-container">
                 <div class="header-quem-somos">
                     <h2>
@@ -184,9 +197,30 @@
             </div>
         </section>
 
-        <section>
+        <section id = "portifolio">
             <div class="portfolio-container">
-                <h2>Conheça nosso Portifólio</h2>
+                <div class="u-custom-menu u-nav-container text-center">
+                    <ul class="u-nav u-unstyled u-nav-1 ">
+                      <li class="u-nav-item"><a
+                          class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                          href="./redeSocial.html" style="padding: 10px 20px;" target="portfolio-iframe">instagram | facebook</a>
+                      </li>
+                      <li class="u-nav-item"><a
+                          class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                          href="./Marketing.html" style="padding: 10px 20px;" target="portfolio-iframe">google Remarketing</a>
+                      </li>
+                      <li class="u-nav-item"><a
+                          class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                          href="logotipos.html" style="padding: 10px 20px;" target="portfolio-iframe">Logotipos</a>
+                      </li>
+                      <li class="u-nav-item"><a
+                          class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                          href="./material.html" style="padding: 10px 20px;" target="portfolio-iframe">Material Impresso</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <iframe src="redeSocial.html" name="portfolio-iframe"></iframe>
 
             </div>
 
@@ -384,19 +418,21 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-copyright text-center py-3">
-                    © <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> Copyright
-                    <a href="https://infoscriptlt.com/" target="_blank"> - Infoscript </a>
-                  </div>
-            </footer>
+           
             
         </section>
 
-        
+        <footer>
+            <div class="footer-copyright text-center py-3">
+                © <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> Copyright
+                <a href="https://infoscriptlt.com/" target="_blank"> - Infoscript </a>
+              </div>
+        </footer>
 
     </div>
-    
+    <script src="./javascript.js">
+        
+    </script>
 </body>
 
 </html>
